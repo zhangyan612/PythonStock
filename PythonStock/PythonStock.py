@@ -22,10 +22,10 @@ for d in shdaily.find()[:10]:
     datalist = pd.DataFrame(list(shdaily.find({'date':{"$lte": date}}).sort('date', -1)))
     data = datalist[:9] # get last 9 day data
     
-    if data.ix[1]['KDJ_K'] is not None:
-        # get previous KDJ data from database
-        K1 = data.ix[1]['KDJ_K']
-        D1 = data.ix[1]['KDJ_D']
+    #if data.ix[1]['KDJ_K'] is not None:
+    #    # get previous KDJ data from database
+    #    K1 = data.ix[1]['KDJ_K']
+    #    D1 = data.ix[1]['KDJ_D']
     
     high = data['high'].values
     low  = data['low'].values
@@ -36,7 +36,8 @@ for d in shdaily.find()[:10]:
     d['KDJ_J'] = J2[0]
     K1 = K2
     D1 = D2
-    print K1, D1
+    db.kdj_insert('test_database', 'ShKDJ', d)
+    print d
 
 
 

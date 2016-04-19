@@ -1,5 +1,4 @@
-# My implimentation of database access layer
-
+# Implimentation of database access layer
 import pandas as pd
 from pymongo import MongoClient
 

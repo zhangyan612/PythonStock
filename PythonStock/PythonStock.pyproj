@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a260a6e6-bea5-4b33-9045-5de14c5565c2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PythonStock.py</StartupFile>
+    <StartupFile>load_data.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,6 +26,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="KDJ_Indicator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="load_data.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PythonStock.py" />

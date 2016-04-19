@@ -10,7 +10,6 @@ if shdaily.count() > 0:
 
 # Put the first dataset in
 
-
 # List the data 
 # initialize Values
 K1 = 50
@@ -37,7 +36,7 @@ for d in shdaily.find()[:10]:
     K1 = K2
     D1 = D2
     db.kdj_insert('test_database', 'ShKDJ', d)
-    print d
+    #print d
 
 
 

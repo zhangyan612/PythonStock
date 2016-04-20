@@ -10,11 +10,14 @@ if shdaily.count() > 0:
 
 # Put the first dataset in
 
+
+
+def KDJCalculator():
+    pass
 # List the data 
 # initialize Values
 K1 = 50
 D1 = 50
-
 # for each day, calculate data and insert into db
 for d in shdaily.find()[:10]:
     date = d['date']

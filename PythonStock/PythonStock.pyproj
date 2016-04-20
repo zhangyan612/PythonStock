@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a260a6e6-bea5-4b33-9045-5de14c5565c2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ploting.py</StartupFile>
+    <StartupFile>PythonStock.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="algoframework.py">
+    <Compile Include="Algo\algoframework.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="data_access.py">
@@ -34,13 +34,16 @@
     <Compile Include="load_data.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ploting.py">
+    <Compile Include="Algo\ploting.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PythonStock.py" />
-    <Compile Include="sma_crossover.py">
+    <Compile Include="Algo\sma_crossover.py">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Algo\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
